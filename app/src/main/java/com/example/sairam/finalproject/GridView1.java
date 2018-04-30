@@ -18,32 +18,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-
 public class GridView1 extends AppCompatActivity {
-//    GridView gridView;
-//
-//    String imageName[] = {"Image 1", "Image 2", "Image 3", "Image 4", "Image 5", "Image 6", "Image 7",
-//            "Image 9", "Image 8"};
-//
-//    int icons[] = {R.drawable.image_1, R.drawable.image_2,
-//            R.drawable.image_3, R.drawable.image_4,
-//            R.drawable.image_5, R.drawable.image_6,
-//            R.drawable.image_7, R.drawable.image_8,
-//            R.drawable.image_9};
-//
-//    public GridView1() {
-//
-//    }
-//
-//    @Override
-//    protected void onCreate(Bundle savedInstanceState){
-//        super.onCreate(savedInstanceState);
-//        setContentView(R.layout.activity_grid_view);
-//        gridView = findViewById(R.id.gridView);
-//        GridAdapter adapter = new GridAdapter(GridView1.this, icons, imageName);
-//        gridView.setAdapter(adapter);
-//
-//    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -73,52 +48,3 @@ public class GridView1 extends AppCompatActivity {
 
     }
 }
-//
-//class GridAdapter extends BaseAdapter {
-//
-//    private int icons[];
-//    private String imageName[];
-//    private Context context;
-//    private LayoutInflater inflater;
-//
-//
-//    public GridAdapter(Context context, int icons[], String imageName[]) {
-//
-//        this.context = context;
-//        this.icons = icons;
-//        this.imageName = imageName;
-//
-//    }
-//
-//    @Override
-//    public int getCount() {
-//        return imageName.length;
-//    }
-//
-//    @Override
-//    public Object getItem(int position) {
-//        return imageName[position];
-//    }
-//
-//    @Override
-//    public long getItemId(int position) {
-//        return position;
-//    }
-//
-//    @Override
-//    public View getView(int position, View convertView, ViewGroup parent) {
-//        View gridView = convertView;
-//
-//        if (convertView == null) {
-//            inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-//            gridView = inflater.inflate(R.layout.activity_grid_view, null);
-//        }
-//        ImageView imgicons = (ImageView) gridView.findViewById(R.id.icons);
-//        TextView imgimageName =(TextView) gridView.findViewById(R.id.imageName);
-//
-//        imgicons.setImageResource(icons[position]);
-//       // imgimageName.setText(imageName[position]);
-//
-//        return gridView;
-//    }
-//}
